@@ -34,7 +34,7 @@ img{
 
 /*menu*/
 header{
-    background:#333;
+    background:#000;
     color:#f2f2f2;
     padding: 1rem 0;
     position: fixed;
@@ -641,4 +641,70 @@ main{
         padding: .1rem;
     }    
 
+}
+
+/* Estilos generales */
+.contenido {
+    padding: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th, .tabla td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#loaders {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.botones-envio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #e08c0d;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #dd6408;
+}
+
+/* Media queries para dispositivos pequeños */
+@media (max-width: 600px) {
+    .tabla th, .tabla td {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+
+    .tabla th::before, .tabla td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    .tabla th, .tabla td {
+        text-align: left;
+    }
+
+    .botones-envio {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
