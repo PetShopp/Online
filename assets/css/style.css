@@ -711,8 +711,8 @@ main{
 
 .texto-animado {
   font-size: 3rem;
-  animation: mover 3s infinite alternate, cambiarColor 5s infinite;
-  font-size: 12px;
+  animation: mover 2s infinite alternate, cambiarColor 4s infinite;
+  font-size: 15px;
 }
 
 @keyframes mover {
@@ -720,7 +720,7 @@ main{
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-2px);
   }
   100% {
     transform: translateY(0);
@@ -735,7 +735,9 @@ main{
     color: #dc3545;
   }
   100% {
-    color: #28a745;
+    color: #28a784;
+  }
+  70% {
+    color: #f2f2f2;
   }
 }
-
