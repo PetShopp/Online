@@ -712,7 +712,7 @@ main{
 .texto-animado {
   font-size: 3rem;
   animation: mover 3s infinite alternate, cambiarColor 5s infinite;
-  font-size: 9px;
+  font-size: 12px;
 }
 
 @keyframes mover {
