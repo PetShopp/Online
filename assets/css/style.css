@@ -708,3 +708,33 @@ main{
         align-items: stretch;
     }
 }
+
+.texto-animado {
+  font-size: 3rem;
+  animation: mover 3s infinite alternate, cambiarColor 5s infinite;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes cambiarColor {
+  0% {
+    color: #007bff;
+  }
+  50% {
+    color: #dc3545;
+  }
+  100% {
+    color: #28a745;
+  }
+}
+
